@@ -1,0 +1,106 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #2f4156;
+    --secundary-color: #f5efeb;
+    --bg: #c8d9e6;
+    --text-size: 1.5rem;
+    --color-text: #567c8d;
+    --grey: #d2d2d2;
+    --icons-hover: #0c121d;
+}
+
+body{
+    font-family: "Roboto", serif;
+    background-color: var(--bg);
+    height: 100vh;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 80%;
+    width: 400px;
+    height: 620px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+}
+
+.header{
+    /* up, right, down, left (clock) */
+    padding: 10px 0 5px 0; 
+}
+
+
+.add{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 20px;
+}
+
+.add input{
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg);
+    padding-left: 5px;
+}
+
+#input::placeholder{
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.add i{
+    font-size: 22px;
+    color: var(--color-text);
+}
+
+.add i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.tasks h2{
+    margin-bottom: 20px;
+}
+
+.tasks p{
+    font-size: 16px;
+}
+
+.tasks li{
+    background-color: var(--grey);
+    border-radius: 8px;
+    padding: 2px;
+    color: var(--color-text);
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasks i:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#list{
+    font-size: 18px;
+}
+
+.crossedOut{
+    text-decoration: line-through;
+    color: var(--primary-color);
+}
